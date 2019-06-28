@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- Side bar CSS -->
+
+<style>
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a, .dropbtn {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+  
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+li.dropdown {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {background-color: #555;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  
+}
+
+</style>
+
+<!-- style for the content area -->
+
+<style>
+  input[type=text], select, input[type=date], input[type=number] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 90%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div.box  {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+
+</head>
+
+<!-- Body Start -->
+
+<body>
+
+  <!-- Side bar -->
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">List Item 1</a></li>
+  <li><a href="#contact">List Item 2</a></li>
+  <li><a href="#about">List Item 3</a></li>
+  <li><a href="#about">List Item 4</a></li>
+  <li><a href="#about">List Item 5</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">List Item 6</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+  
+  
+</ul>
+<br>
+
+<!-- Content Divison -->
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+
+  <!-- Content Area -->
+
+  <div class="box">
+      <form action="">
+        <label>Label 1</label><br>
+        <input type="text" placeholder="Placeholder..">
+        <br>
+        <label>Label 2</label><br>
+        <input type="text" placeholder="Placeholder..">
+        <br>
+        <label>Drop Box</label>
+        <br>
+    <select>
+      <option>-- Select choices --</option>
+      <option value="choice 1">choice 1</option>
+      <option value="choice 2">choice 2</option>
+    </select>
+    <br>
+    <label>Start Date</label><br>
+    <input type="date">
+    <br>
+    <label for="pname">Amount</label><br>
+    <input type="number" id="cname" name="Comapny_name" placeholder="Amount..">
+    <br>
+    <label>Group Type</label><br><br>
+    <input type="radio" name="gender" value="male" checked> Male
+  <input type="radio" name="gender" value="female"> female
+    <br><br>
+  
+        <input type="submit" value="Submit">
+      </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
